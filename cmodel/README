@@ -1,0 +1,12 @@
+This is a simple functional model for the RV32I ISA written in C++
+
+To Build(rv32i_sim binary):
+> make
+
+It expects the rv32I binary to be present in 2 hex formatted ascii files:
+code.txt => contains the instruction
+data.txt => contains/represents the data memory
+
+on successful execution of the program, it generates 2 output files:
+data_out.txt => the data memory dump, at the end of execution
+regs_out.txt => the register dump, at the end of execution
